@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-size: 16px; /* Tamanho de fonte base */
+    line-height: 1.5; /* Melhor legibilidade */
+    color: #333;
+}
+
+/* Título principal */
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: 10px
+}
+
+/* Estilizando tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Aumenta o padding para uma aparência mais espaçosa */
+    text-align: left;
+    vertical-align: middle; /* Alinha verticalmente */
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold; /* Garantir que o texto do cabeçalho tenha destaque */
+}
+
+/* Botões */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 16px; /* Aumenta o tamanho do botão */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px; /* Consistência no tamanho da fonte */
+    transition: background-color 0.3s ease; /* Transição suave para hover */
+    
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Inputs */
+input {
+    padding: 10px; /* Melhor espaçamento */
+    margin: 10px 0;
+    width: 100%;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Tamanho de fonte consistente */
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Destaque no foco */
+}
+
+/* Estilo para links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Adicionando uma classe para contêineres flexíveis */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os elementos */
+}

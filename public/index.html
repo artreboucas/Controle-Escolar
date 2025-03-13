@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="script.js"></script>
+    <title>Escola</title>
+
+</head>
+
+<body>
+    <h1>Alunos</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="alunos">
+        </tbody>
+
+    </table>
+    <hr>
+    <h2>Adicionar Aluno</h2>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" placeholder="Nome">
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" placeholder="Idade">
+    <button onclick="addAluno()">Adicionar</button>
+
+    <hr>
+    <h1>Professores</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Disciplina</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="professores">
+        </tbody>
+
+    </table>
+    <hr>
+    <h2>Adicionar Professor</h2>
+    <label for="nome-professor">Nome:</label>
+    <input type="text" id="nome-professor" placeholder="Nome">
+    <label for="disciplina">Disciplina:</label>
+    <input type="text" id="disciplina" placeholder="Disciplina">
+    <button onclick="addProfessor()">Adicionar</button>
+
+    <h1>Boletins</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Aluno</th>
+                <th>Professor</th>
+                <th>Disciplina</th>
+                <th>Notas</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="boletins"></tbody>
+    </table>
+
+    <hr>
+    <h2>Adicionar Boletim</h2>
+    <label for="alunoId">ID do Aluno:</label>
+    <input type="number" id="alunoId" placeholder="ID do aluno">
+    <label for="professorId">ID do Professor:</label>
+    <input type="number" id="professorId" placeholder="ID do professor">
+    <label for="disciplinaBoletim">Disciplina:</label>
+    <input type="text" id="disciplinaBoletim" placeholder="Disciplina">
+    <label for="nota1">Nota 1:</label>
+    <input type="number" step="0.1" id="nota1" placeholder="Nota 1">
+    <label for="nota2">Nota 2:</label>
+    <input type="number" step="0.1" id="nota2" placeholder="Nota 2">
+    <label for="nota3">Nota 3:</label>
+    <input type="number" step="0.1" id="nota3" placeholder="Nota 3">
+    <button onclick="addBoletim()">Adicionar Boletim</button>
+
+</body>
+
+</html>
