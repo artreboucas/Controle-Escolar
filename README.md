@@ -47,13 +47,15 @@ Banco de Dados: PostgreSQL (utilizando Prisma ORM)
 
 3. **Configure o Banco de Dados:**
 
-   Configure o banco de dados PostgreSQL. Você pode criar um banco de dados local e        adicionar as credenciais no arquivo .env (caso necessário).
+   -Crie um arquivo .env na sua aplicação.
+   
+   -Configure o banco de dados PostgreSQL. (Você pode criar um banco de dados local e        adicionar as credenciais no arquivo .env)
 
     ```bash
     DATABASE_URL=postgresql://usuario:senha@localhost:5432/escola
     ```
 
-4. **Gerar as Migrações do Prisma.**
+5. **Gerar as Migrações do Prisma.**
 
     O Prisma utiliza migrações para configurar o banco de dados com base no seu schema.prisma. Para gerar as migrações e aplicar as mudanças no banco de dados, utilize os seguintes comandos:
 
@@ -74,12 +76,26 @@ Banco de Dados: PostgreSQL (utilizando Prisma ORM)
     node server.js
     ```
 
-2. **Visualização da Aplicação:** http://localhost:3000.
+2. **Visualização da Aplicação:**
+
+    http://localhost:3000.
+
+4. **Visualização do Banco de Dados**
+
+    ```bash
+    npx prisma studio
+    ```
+   ou
+   
+    http://localhost:3000/alunos
+   
+    http://localhost:3000/profesorres
+   
+    http://localhost:3000/boletins
 
 ---
 
 ## 📄 Licença
 
 Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
-
 
