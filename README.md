@@ -47,7 +47,8 @@ Banco de Dados: PostgreSQL (utilizando Prisma ORM)
 
 3. **Configure o Banco de Dados:**
 
-   Configure o banco de dados PostgreSQL. Você pode criar um banco de dados local e        adicionar as credenciais no arquivo .env (caso necessário).
+   Crie um arquivo .env na sua aplicação.
+   Configure o banco de dados PostgreSQL. (Você pode criar um banco de dados local e        adicionar as credenciais no arquivo .env)
 
     ```bash
     DATABASE_URL=postgresql://usuario:senha@localhost:5432/escola
@@ -76,6 +77,18 @@ Banco de Dados: PostgreSQL (utilizando Prisma ORM)
 
 2. **Visualização da Aplicação:** http://localhost:3000.
 
+3. **Visualização do Banco de Dados**
+
+    ```bash
+    npx prisma studio
+    ```
+   ou
+   
+    ```bash
+    http://localhost:3000/alunos
+    http://localhost:3000/profesorres
+    http://localhost:3000/boletins
+    ```
 ---
 
 ## 📄 Licença
