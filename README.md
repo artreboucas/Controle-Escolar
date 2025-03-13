@@ -88,7 +88,9 @@ Banco de Dados: PostgreSQL (utilizando Prisma ORM)
    ou
    
     http://localhost:3000/alunos
+   
     http://localhost:3000/profesorres
+   
     http://localhost:3000/boletins
 
 ---
